@@ -1,0 +1,22 @@
+<nav class="navbar navbar-inverse" data-spy="affix">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#" style="font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif;">TheNadiadPortal</a>
+      </div>
+      <ul class="nav navbar-nav"  style="font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size:15px">
+        <li class="active" style="font-size:14px"><a routerLink="/main" routerLinkActive="active">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" style="font-size:14px" data-toggle="dropdown" href="#">RESTAURANTS<span class="caret"></span></a>
+          <ul class="dropdown-menu" >
+            <li><a routerLink="/restaurant1" routerLinkActive="active" style="font-size:14px">Page</a></li>
+          </ul>
+        </li>
+        <li><a routerLink="/service" routerLinkActive="active" style="font-size:14px">SERVICES</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" style="font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size:15px">
+        <li><a routerLink="/signup" routerLinkActive="active" ><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+        <li><a routerLink="/login" routerLinkActive="active"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+<router-outlet></router-outlet>

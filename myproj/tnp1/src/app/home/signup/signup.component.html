@@ -1,0 +1,51 @@
+
+  <div class="signup__container" style="background-image:url(../../../assets/bgimage.jpg);">
+
+  <div class="container__child signup__thumbnail">
+     <div class="thumbnail__content text-center" style="font-size:24px">
+     <h1>Sign-up</h1>
+
+      <br/><br/><br/>
+      <h2 >Welcome to The Nadiad Portal.</h2>
+      <h2 class="heading--secondary">Are you ready to join our community?</h2>
+    </div>
+
+    <div class="signup__overlay"></div>
+  </div>
+  <div class="container__child signup__form">
+    <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
+      <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="registerService.selectedRegister._id">
+      <div class="form-group">
+        <label for="username" style="font-size:14px">Username</label>
+        <input class="form-control" type="text" name="name" #name="ngModel" [(ngModel)]="registerService.selectedRegister.name" placeholder="UserName" required />
+      </div>
+      <div class="form-group">
+          <label for="age" style="font-size:14px">Age</label>
+          <input class="form-control" type="number" name="age"  #age="ngModel" [(ngModel)]="registerService.selectedRegister.age" placeholder="age" required />
+        </div>
+      <div class="form-group">
+        <label for="email" style="font-size:14px">Email</label>
+        <input class="form-control" type="email" name="email" #email="ngModel" [(ngModel)]="registerService.selectedRegister.email" placeholder="sampleemail@abc.com" required />
+      </div>
+      <div class="form-group">
+        <label for="password" style="font-size:14px">Password</label>
+        <input class="form-control" type="text" name="password" #password="ngModel" [(ngModel)]="registerService.selectedRegister.password" placeholder="********" required />
+      </div>
+      
+      <div class="m-t-lg">
+        <ul class="list-inline">
+          <li>
+            <input class="btn btn--form" type="submit" value="Register"/>
+          </li>
+          <li>
+              <input class="btn btn--form" type="button" (click)="resetForm(registerForm)" value="Reset"/>
+            </li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
